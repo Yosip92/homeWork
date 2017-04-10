@@ -9,15 +9,15 @@
     <h1>Film Checker</h1>
     <form action="" name="myForm" method="post">
         <div>
-            <label for="focusName">Enter your name</label>
+            <label for="focusName">Enter your name: </label>
             <input type="text" name="userName" id="focusName" value="">
         </div>
         <div>
-            <label for="focusNumber">Enter your age</label>
+            <label for="focusNumber">Enter your age: </label>
             <input type="number" name="userage" id="focusNumber" value="" min="0" max="150">
         </div>
         <div>
-            <label for="focusFilm">Choose movie</label>
+            <label for="focusFilm">Choose movie: </label>
             <select name="userFilm" id="focusFilm">
                 <option value="terminator" id="term">Terminator (1984)</option>                  <!--16+-->
                 <option value="forrestGump" id="forrest">Forrest Gump (1994)</option>            <!--12+-->
@@ -28,13 +28,15 @@
         </div>
         <div>
             <input type="reset" name="submit2" value="Reset">
+            <span>
+                <button type="button" onclick="myName()">Submit</button>
+            </span>
         </div>
     </form>
-    <button type="button" onclick="myName()">Submit</button>
-    <div>
-        <span id="demo"></span>
-        <span id="demo2"></span>
-        <span id="demo3"></span>
+    <div class="ans">
+        <span class="answer" id="demo"></span>
+        <span class="answer" id="demo2"></span>
+        <span class="answer" id="demo3"></span>
     </div> 
     <script src="script.js"></script>
 </body>

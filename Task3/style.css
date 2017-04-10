@@ -2,3 +2,10 @@ body {
     background: #FFD700;
     color: #008000;
 }
+.answer {
+    font-size: 30px;
+    color: black;
+}
+.ans {
+    margin-top: 50px;
+}
