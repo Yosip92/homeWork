@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Film Checker</h1>
+    <form action="" name="myForm" method="post">
+        <div>
+            <label for="focusName">Enter your name</label>
+            <input type="text" name="userName" id="focusName" value="">
+        </div>
+        <div>
+            <label for="focusNumber">Enter your age</label>
+            <input type="number" name="userage" id="focusNumber" value="" min="0" max="150">
+        </div>
+        <div>
+            <label for="focusFilm">Choose movie</label>
+            <select name="userFilm" id="focusFilm">
+                <option value="terminator" id="term">Terminator (1984)</option>                  <!--16+-->
+                <option value="forrestGump" id="forrest">Forrest Gump (1994)</option>            <!--12+-->
+                <option value="shrek" id="shrek">Shrek (2001)</option>                           <!--'-16'-->
+                <option value="avatar" id="avatar">Avatar (2009)</option>                        <!--12+-->
+                <option value="whyHim" id="why">Why Him ? (2016)</option>                        <!--16+-->
+            </select>
+        </div>
+        <div>
+            <input type="reset" name="submit2" value="Reset">
+        </div>
+    </form>
+    <button type="button" onclick="myName()">Submit</button>
+    <div>
+        <span id="demo"></span>
+        <span id="demo2"></span>
+        <span id="demo3"></span>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
