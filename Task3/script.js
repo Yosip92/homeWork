@@ -9,7 +9,7 @@ function myName() {
         textAge = 'You have ' + age + ' years. ';
         document.getElementById('demo2').innerHTML = textAge;
         
-        var film, i1, i2, i3, i4, i5, text1, text2, text3, text4, text5;
+        var film, i1, i2, i3, i4, i5, text1;
 
         i1 = document.getElementById('term').value;
         i2 = document.getElementById('forrest').value;
