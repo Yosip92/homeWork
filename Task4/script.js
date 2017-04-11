@@ -1,10 +1,11 @@
 function myFunc(){
     var txt = ""; 
-var x, y;
+var x, myObj;
 // y = document.getElementById('text1').innerHTML;
-y = /*input value here*/;
-for (x in y) {
-    txt += y[x] + " ";
+myObj = console;    /*input value here*/
+for (x in myObj) {
+    txt += myObj[x];
 }
-document.getElementById("demo").innerHTML = txt;
+document.getElementById("param").innerHTML = txt;
+document.getElementById("type").innerHTML = typeof myObj;
 } 
