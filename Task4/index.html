@@ -10,6 +10,21 @@
     <button onclick="myFunc()">Enter</button>
     <h2 id="type"></h2>
     <p id="param"></p>
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
+    <script>
+
+        function myFunc(){
+            var txt = ""; 
+            var x, myObj, tre;
+            myObj = eval(document.getElementById('text1').value);
+            for (x in myObj) {
+                txt += myObj[x]+' --- '+ typeof myObj[x] +'<br/>';
+            }
+            document.getElementById("param").innerHTML = txt;
+            myObj.toString();
+            document.getElementById("type").innerHTML = myObj + " is " + typeof myObj + '!';
+        }
+
+    </script>
 </body>
 </html>
