@@ -15,3 +15,4 @@ var myFirstObj = {
 for (var val in myFirstObj){
     console.log(val);
 }
+
